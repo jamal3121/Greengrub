@@ -1,0 +1,59 @@
+.text-green {
+    color: #519b4c;
+}
+.bg-green {
+    background-color:  #519b4c;
+}
+.image img{
+    transition: .3s linear;
+
+}
+.image:hover img{
+    scale: 1.1;
+
+}
+.right-02 .anime{
+    transition:  all 3s ease-in;
+    animation-name: animateUpDOwn ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes animateUpDOwn{
+    0%{
+        bottom: -90px;
+    }
+    50%{
+        bottom: -70px;
+    }
+    100%{   
+        bottom: -90px;
+    }
+}
+
+@media (max-width: 480px) and (min-width:320px){
+    .discovery-container{
+        flex-direction: column-reverse;
+    }
+    .discovery-container .discovery-right{
+        gap: 10px;
+    }
+    .discovery-container .discovery-right .image-01{
+        gap: 10px;
+    }
+    .discovery-container .discovery-right .right-02 .anime{
+        display: none;
+    }
+    .discovery-container .left-01{
+        padding: 0;
+    }
+    .discovery-container .left-01 .text-01 h1{
+        font-size: 22px;
+        line-height: 1.5;
+
+    }
+    .discovery-container .left-01 .img{
+        flex-direction: column;
+    }
+}

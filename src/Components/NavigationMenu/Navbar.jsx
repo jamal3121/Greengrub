@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='w-[100vw] bg-green-400 z-20'>
       <TopHeader/>
       <MiddleNav/>
-      <MainMenu/>
+      <MainMenu className="sticky top-0" />
     </div>
   )
 }

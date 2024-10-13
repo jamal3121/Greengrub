@@ -1,0 +1,71 @@
+.category {
+  background-color: #f9f6f1;
+}
+.text-green {
+  color: #519b4c;
+}
+.bg-green {
+  background-color: #519b4c;
+}
+
+.card2 {
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.slick-slide {
+  margin: 0 10px; /* Optional: adds margin between slides */
+}
+.category-card{
+  background:linear-gradient(to top,#519b4c 50%,#fff 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: all .5s ease-out;
+}
+.category-card:hover{
+  background-position: bottom;
+ 
+}
+.category-card:hover .img-Container img{
+  transition: all .5s ease-out;
+}
+.category-card:hover .img-Container img{
+  scale: 1.1;
+
+}
+.category-card:hover .category-btn{
+  background-color: white;
+  color:#519b4c;
+ 
+}
+.category-card:hover .cat-tit {
+  color: white;
+ 
+}
+
+@media (max-width: 480px) and (min-width:320px){
+  .smallScreenmai p{
+    font-size: 16px;
+  }
+  .smallScreenmai h1{
+    width: 100%;
+    font-size: 22px;
+  }
+  .cat-cont .cat-tit{
+    margin-bottom: 7px;
+  }
+  .category-Slider{
+    height: 400px;
+  }
+
+}
+@media (max-width: 1980px) and (min-width:1440px){
+  .category-Slider{
+    height: 650px;
+
+  }
+  .imagebottom{
+    bottom: -10px;
+  }
+}

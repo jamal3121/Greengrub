@@ -1,0 +1,30 @@
+.bannerContainer .bannerImg {
+  transition: all 0.3s linear;
+}
+
+.bannerContainer:hover .bannerImg {
+  transform: scale(1.1);
+}
+
+.bannerImg {
+  width: 100%; /* Ensure the image takes full width */
+  height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 480px) and (min-width:320px){
+  .banner{
+    flex-direction: column;
+
+  }
+  .bannerContent{
+    width: 70%;
+  }
+  .bannerContent p{
+    font-size: 13px;
+  }
+  .bannerContent h1{
+    font-size: 18px;
+  }
+  .bannerContent button{
+    display: none;
+  }
+}

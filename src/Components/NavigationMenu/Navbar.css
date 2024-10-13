@@ -17,15 +17,36 @@
 .bx-shadow{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-
-
+.main-nav{
+  position: sticky;
+  top: 0;
+}
+.ds-none{
+  display: none;
+}
 
 /* small screen media query  */
 @media (max-width: 480px) and (min-width:320px){
+  *{
+    overflow-x: hidden;
+  }
     .help{
         display: none;
     }
     .topHeader{
         justify-content: center;
+    }
+    .d-none{
+      display: none;
+    }
+    .ds-none{
+      display: block;
+    }
+    .smallscreen{
+      display: flex;
+      justify-content: space-between;
+    }
+    .main-nav{
+      display: none;
     }
 }
