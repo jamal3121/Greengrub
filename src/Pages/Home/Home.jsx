@@ -7,6 +7,8 @@ import Category from '../../Components/Category/Category'
 import { banner2 } from '../../Data/bannerAndLogoData'
 import Banner from '../../Components/Banner/Banner'
 import FreshProductSection from '../../Components/FreshProduct/FreshProductSection'
+import Testimonial from '../../Components/Testimonial/Testimonial'
+import SpecialOffer from '../../Components/SpecialOffer/SpecialOffer'
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
         <Category className="mt-10" />
         <Banner/>
         <FreshProductSection/>
+        <Testimonial/>
+        <SpecialOffer/>
 
     </div>
   )

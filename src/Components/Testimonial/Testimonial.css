@@ -1,0 +1,85 @@
+.leftimg .image01 {
+  transition: all 0.3s linear;
+}
+
+.leftimg:hover .image01 {
+  transform: scale(1.1);
+}
+.left003 .anime {
+  transition: all 3s linear;
+  animation-name: animateUpDOwn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateUpDOwn {
+  0% {
+    top: 8px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 8px;
+  }
+}
+.testi-slider {
+  position: relative; /* Ensure the slider has relative positioning */
+}
+
+.first-div {
+  width: 100%; /* Ensure full width for the slide */
+  box-sizing: border-box; /* Include padding/border in the element's total width */
+  padding: 20px; /* Add padding if needed */
+}
+.productcard {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10px; /* Adjust margin as necessary */
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .testimonial {
+    flex-direction: column;
+  }
+  .testimonial .right {
+    width: 100%;
+  }
+  .testimonial .left {
+    width: 100%;
+    margin-top: 0;
+  }
+  .anime {
+    display: none;
+  }
+  .leftimg {
+    top: 90px;
+    align-items: end;
+  }
+  .right .testo p {
+    font-size: 14px;
+  }
+  .right .testo h1 {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .testi-slider .first-div {
+    padding-left: -50px; /* This is incorrect, padding cannot be negative */
+  }
+  .first-div {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    padding: 5px; /* You can adjust this value */
+    margin-right: 50px; /* This might cause the overlapping issue */
+  }
+  .review {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px;
+    width: 70%;
+    text-wrap: wrap; /* This should be changed to "overflow-wrap: break-word;" if needed */
+  }
+}

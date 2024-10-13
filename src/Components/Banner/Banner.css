@@ -21,8 +21,9 @@
   .bannerContent p{
     font-size: 13px;
   }
-  .bannerContent h1{
-    font-size: 18px;
+  .bannerContent h2{
+    font-size: 22px;
+    margin-top: -20px;
   }
   .bannerContent button{
     display: none;
